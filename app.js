@@ -1,42 +1,42 @@
 
  // convert string to array
- function strToArrayFunc(submittedText) {
-   var arr = submittedText.toLowerCase().split('.').join('').split('?').join('').split('!').join('').split(' ');
-   return arr;
+function strToArrayFunc(submittedText) {
+     var arr = submittedText.toLowerCase().split('.').join('').split('?').join('').split('!').join('').split(' ');
+     return arr;
  };
 
  // count word total by counting elements in array
 function wordCountFunc(arr) {
- var wordTotal = arr.length
- return wordTotal;
+     var wordTotal = arr.length
+     return wordTotal;
 };
 
 // find unique words in the array using a loop
 function findUniqueFunc(arr) {
-  var uniqueArr = [];
-  for (var i=0; i<arr.length; i++) {
-    if (uniqueArr.indexOf(arr[i]) <== -1) {
-      uniqueArr.push(arr[i]);
-    }
+     var uniqueArr = [];
+     for (var i=0; i<arr.length; i++) {
+          if (uniqueArr.indexOf(arr[i]) <== -1) {
+               uniqueArr.push(arr[i]);
+          }
   }
-  return uniqueCount;
+     return uniqueCount;
 };
 
 // find the average word length by dividing
 // length of string by number of elements in array
 function wordAvgFunc(submittedText, arr) {
-  var letterTotal = submittedText.length;
-  var wordTotal = arr.length;
-  var wordAvg = letterTotal / wordTotal;
-  return wordAvg;
+     var letterTotal = submittedText.length;
+     var wordTotal = arr.length;
+     var wordAvg = letterTotal / wordTotal;
+     return wordAvg;
 };
 
 //find the average sentence length by the number of
 //elements in the array by the number of periods.
 function sentenceAvgFunc (submittedText, arr) {
-       var periodCount = submittedText.replace(/[^.]/g, "").length;
-       var sentenceAvg =  arr.length / periodCount;
-       return sentenceAvg;
+     var periodCount = submittedText.replace(/[^.]/g, "").length;
+     var sentenceAvg =  arr.length / periodCount;
+     return sentenceAvg;
 }
 
 function populateText(){
@@ -67,7 +67,7 @@ $('.js-text-form').submit(function(event){
      });
 
 
-$(document).ready(function() {});
+$(document).ready(function(){});
 
 /*
 
