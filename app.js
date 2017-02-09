@@ -63,7 +63,7 @@ function populateText(){
 $('.js-text-form').submit(function(event){
      event.preventDefault();
      var submittedText = $('#user-text').val();
-     populateText();
+     populateText(submittedText);
      });
 
 
